@@ -1,3 +1,3 @@
 # My personal portfolio
 
-I am attempting to learn some basic web design to create my own portfolio
+I am attempting to learn html, css, and js to create my own portfolio. This project is not finished yet.
