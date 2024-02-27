@@ -1,3 +1,4 @@
+
 body {
     background-color: aquamarine;
     /*background-image: url('ClemWithGlasses.png');
@@ -19,6 +20,10 @@ p {
 }
 ul {
     list-style-type: circle;
+}
+
+.pages-buttons {
+    width: 100%;
 }
 
 div.pages {
