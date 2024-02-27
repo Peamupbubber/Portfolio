@@ -1,3 +1,21 @@
 function myFunction() {
-    alert("You clicked a button!");
+    var x = document.getElementsByClassName("mycontainer");
+    for (var i = 0; i < x.length; i++) {
+        if(x[i].style.display == "")
+            x[i].style.display = "none"
+        else
+            x[i].style.display = ""
+    }
+}
+
+function displaySD() {
+    alert("SD clicked!")
+}
+
+function displayGD() {
+    alert("GD clicked!")
+}
+
+function displayAboutMe() {
+    alert("About Me clicked!")
 }

@@ -1,13 +1,30 @@
 body {
     background-color: aquamarine;
+    /*background-image: url('ClemWithGlasses.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%; */
 }
-h1 {
+#myHeader {
+    color:blue;
     border: 2px solid violet;
     padding: 20px;
     margin: 50px;
+    text-align: center;
 }
 p {
     color: red;
     font-family: courier;
     font-size: 75%;
+}
+ul {
+    list-style-type: circle;
+}
+
+div.pages {
+    display: flex;
+    text-align: center;
+}
+div.pages div {
+    width: 33%;
 }
