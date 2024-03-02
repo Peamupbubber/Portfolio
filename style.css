@@ -33,3 +33,11 @@ div.pages {
 div.pages div {
     width: 33%;
 }
+
+.flex-container {
+    background-color: aqua;
+    width: 100px;
+    display: flex;
+    text-indent: 10px;
+    flex-direction: column;
+}
