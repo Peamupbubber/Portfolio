@@ -8,7 +8,7 @@
         <meta name="author" content="Hunter Smith">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="start()">
         <h1 id="myHeader">Hunter Smith</h1>
         
         <div class="pages">
@@ -23,6 +23,7 @@
             </div>
         </div>
         
+        <!--
         <p>My first paragraph.</p>
         <button onclick="myFunction()">A button</button>
         <ul>
@@ -30,12 +31,35 @@
             <li>Banana</li>
             <li>Orange</li>
         </ul>
+        -->
 
-        <div class="flex-container">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
+        <div class="outer">
+            <div class="projectSelectionSD">
+                <div>
+                    <button class="projectSelectionButton">CrewsOutThere</button>
+                </div>
+                <div>
+                    <button class="projectSelectionButton">Deadwood</button>
+                </div>
+                <div>
+                    <button class="projectSelectionButton">ATL Compiler</button>
+                </div>
+            </div>
+
+            <div class="projectSelectionGD">
+                <div>
+                    <button class="projectSelectionButton">By the Campfire</button>
+                </div>
+                <div>
+                    <button class="projectSelectionButton">Five Minutes 'Till Five</button>
+                </div>
+            </div>
+    
+            <div id="projectHighlight">
+                <p>Project Information</p>
+            </div>
         </div>
+
 
     </body>
 

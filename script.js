@@ -1,3 +1,10 @@
+function start() {
+    var x = document.getElementsByClassName("projectSelectionGD");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none"
+    }
+}
+
 function myFunction() {
     var x = document.getElementsByClassName("pages");
     for (var i = 0; i < x.length; i++) {
@@ -8,12 +15,29 @@ function myFunction() {
     }
 }
 
+
 function displaySD() {
-    alert("SD clicked!")
+    var x = document.getElementsByClassName("projectSelectionGD");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none"
+    }
+
+    x = document.getElementsByClassName("projectSelectionSD");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = ""
+    }
 }
 
 function displayGD() {
-    alert("GD clicked!")
+    var x = document.getElementsByClassName("projectSelectionSD");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none"
+    }
+
+    x = document.getElementsByClassName("projectSelectionGD");
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = ""
+    }
 }
 
 function displayAboutMe() {
