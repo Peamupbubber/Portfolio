@@ -12,8 +12,6 @@ function getSpotifyInfo() {
     /* Get my recently listned song from lastfm */
     lastfm.user.getRecentTracks({limit: 1, user: 'Peamupbubber', api_key: api_key}, {success: function(data){
         const track = data.recenttracks.track[0];
-        //JSON.stringify(track.artist)
-        // alert(JSON.stringify(track.image[1]["#text"]));
         document.getElementById("replace").innerText = track.name + " by " + track.artist["#text"];
         document.getElementById("replaceImage").src = track.image[1]["#text"];
         }, error: function(code, message){
