@@ -12,7 +12,7 @@ function getSpotifyInfo() {
     /* Get my recently listned song from lastfm */
     lastfm.user.getRecentTracks({limit: 1, user: 'Peamupbubber', api_key: api_key}, {success: function(data){
         const track = data.recenttracks.track[0];
-        document.getElementById("replace").innerText = track.name
+        document.getElementById("replace").innerText = track.name;
         }, error: function(code, message){
         // Doesn't seem to report the error
         document.getElementById("replace").innerText = "Couldn't get Spotify data :("
