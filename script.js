@@ -1,50 +1,35 @@
-var cache = new LastFMCache();
-var lastfm;
+/* Information required for accessing my Spotify though last.fm */
+var api_key = "432bce050704e6d83883a144e5123809";
+var cache   = new LastFMCache();
+var lastfm  = new LastFM({
+    apiKey : api_key,
+    cache  : cache
+});
 
+/* Get my recently listened song from lastfm */
 function getSpotifyInfo() {
-    var api_key = "432bce050704e6d83883a144e5123809";
-
-    lastfm = new LastFM({
-        apiKey : api_key,
-        cache  : cache
-    });
-
-    /* Get my recently listned song from lastfm */
     lastfm.user.getRecentTracks({limit: 1, user: 'Peamupbubber', api_key: api_key}, {success: function(data){
         const track = data.recenttracks.track[0];
         var lt = "Was";
         if(track["@attr"] != undefined) {
             lt = "Currently";
         }
-        document.getElementById("replace").innerText = lt + " listening to " + track.name + " by " + track.artist["#text"];
-        document.getElementById("replaceImage").src = track.image[1]["#text"];
-        }, error: function(code, message){
-        // Doesn't seem to report the error
-        document.getElementById("replace").innerText = "Couldn't get Spotify data :("
-    }});
+        document.getElementById("songTitleAndArtist").innerText = lt + " listening to " + track.name + " by " + track.artist["#text"];
+        document.getElementById("songImage").src = track.image[1]["#text"];
+        },
+        error: function(code, message) { /* Nothing on error */ }
+    });
 }
 
+/* Can be used for anything that needs to happen on page load */
 function start() {
-    getSpotifyInfo();
-
-    var x = document.getElementsByClassName("projectSelectionGD");
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
+    
 }
-
-function myFunction() {
-    var x = document.getElementsByClassName("pages");
-    for (var i = 0; i < x.length; i++) {
-        if(x[i].style.display == "")
-            x[i].style.display = "none";
-        else
-            x[i].style.display = "";
-    }
-}
-
 
 function displaySD() {
+    document.getElementById("aboutMeOuter").style.display = "none";
+    document.getElementById("projectOuter").style.display = "";
+
     var x = document.getElementsByClassName("projectSelectionGD");
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -57,6 +42,9 @@ function displaySD() {
 }
 
 function displayGD() {
+    document.getElementById("aboutMeOuter").style.display = "none";
+    document.getElementById("projectOuter").style.display = "";
+
     var x = document.getElementsByClassName("projectSelectionSD");
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -69,5 +57,8 @@ function displayGD() {
 }
 
 function displayAboutMe() {
-    alert("About Me clicked!");
+    getSpotifyInfo();
+
+    document.getElementById("projectOuter").style.display = "none";
+    document.getElementById("aboutMeOuter").style.display = "";
 }

@@ -34,7 +34,7 @@ div.pages div {
     width: 33%;
 }
 
-.outer {
+#projectOuter {
     height: 400px;
     display:flex;
     margin-top: 50px;
@@ -71,4 +71,9 @@ div.pages div {
     margin-left: 300px;
     margin-right: 300px;
     width: 100%;
+}
+
+#aboutMe {
+    border: 5px solid blue;
+    margin-top: 50px;
 }
