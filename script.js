@@ -1,9 +1,13 @@
+var cache = new LastFMCache();
 var lastfm;
 
 function getSpotifyInfo() {
     var api_key = "432bce050704e6d83883a144e5123809";
 
-    lastfm = new LastFM({ apiKey: api_key });
+    lastfm = new LastFM({
+        apiKey : api_key,
+        cache  : cache
+    });
 
     /* Get my recently listned song from lastfm */
     lastfm.user.getRecentTracks({limit: 1, user: 'Peamupbubber', api_key: api_key}, {success: function(data){
@@ -17,7 +21,7 @@ function getSpotifyInfo() {
 
 function start() {
     getSpotifyInfo();
-    
+
     var x = document.getElementsByClassName("projectSelectionGD");
     for (var i = 0; i < x.length; i++) {
         x[i].style.display = "none";
