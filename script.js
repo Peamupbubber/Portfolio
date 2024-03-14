@@ -31,30 +31,16 @@ function displaySD() {
     document.getElementById("aboutMeOuter").style.display = "none";
     document.getElementById("projectOuter").style.display = "";
 
-    var x = document.getElementsByClassName("projectSelectionGD");
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-
-    x = document.getElementsByClassName("projectSelectionSD");
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "";
-    }
+    document.getElementById("projectSelectionGD").style.display = "none";
+    document.getElementById("projectSelectionSD").style.display = "";
 }
 
 function displayGD() {
     document.getElementById("aboutMeOuter").style.display = "none";
     document.getElementById("projectOuter").style.display = "";
 
-    var x = document.getElementsByClassName("projectSelectionSD");
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-
-    x = document.getElementsByClassName("projectSelectionGD");
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "";
-    }
+    document.getElementById("projectSelectionSD").style.display = "none";
+    document.getElementById("projectSelectionGD").style.display = "";
 }
 
 function displayAboutMe() {
