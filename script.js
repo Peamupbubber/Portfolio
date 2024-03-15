@@ -49,3 +49,15 @@ function displayAboutMe() {
     document.getElementById("projectOuter").style.display = "none";
     document.getElementById("aboutMeOuter").style.display = "";
 }
+
+function fetchProjectData(project) {
+    fetch("./projects.json")
+        .then((res) => {
+          return res.json();  
+        })
+        .then((data) => displayProject(data[project]));
+}
+
+function displayProject(projectData) {
+    alert(JSON.stringify(projectData));
+}

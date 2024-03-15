@@ -40,10 +40,14 @@ div.pages div {
 }
 
 .projectSelection {
-    min-height: 60vh;
+    max-height: 70vh;
     width: 25vw;
-    display: flex;
     flex-direction: column;
+    overflow-y: scroll;
+}
+
+.projectSelection::-webkit-scrollbar {
+    display: none;
 }
 
 .projectSelectionButton {
@@ -67,7 +71,8 @@ div.pages div {
 #projectHighlight {
     border: 4px solid green;
     width: 75%;
-    max-height: 55vh;
+    min-height: 55vh;
+    height: fit-content;
     margin-right: 10vw;
 }
 
@@ -98,8 +103,4 @@ h3 {
 .projInfoText {
     padding-left: 1em;
     padding-right: 1em;
-}
-
-#howToView div{
-    flex-direction: column;
 }
