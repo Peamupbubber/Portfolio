@@ -1,36 +1,74 @@
 {
     "CrewsOutThere": {
-        "projHeader" : {
-            "projTitle": "CrewsOutThere",
-            "projDate": "Jan. 2023 - Dec. 2023"
-        },
-        "projInfo" : {
-            "projDesc": {
-                "projInfoText": "CoT is a fully functioning text-messaging system created for the Bellingham Civil Air Patrol, an auxilary of the US Airforce, intended to get flight crews in contact with each other on short notice."
+        "projTitle": "CrewsOutThere",
+
+        "projDate": "Jan. 2023 - Dec. 2023",
+
+        "projDesc": "CoT is a fully functioning text-messaging system created for the Bellingham Civil Air Patrol, an auxilary of the US Airforce, intended to get flight crews in contact with each other on short notice.",
+        
+        "projMyCont": "My primary contribution was to write most of the code found in the crewsOutThere/command folder, primarily these go files: cleanupDB, commandFly, commandParser, commandUtilities, and parserCalls.",
+
+        "projTechUsed": "Golang, MySQL, Docker, Bash, Git, Linux, NetBSD",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "GitHub Repository",
+                "link": "https://github.com/Peamupbubber/CrewsOutThere"
             },
-            "projMyCont": {
-                "projInfoText": "My primary contribution was to write most of the code found in the crewsOutThere/command folder, primarily these go files: cleanupDB, commandFly, commandParser, commandUtilities, and parserCalls."
+            "projHowToView1": {
+                "text": "Project Documentation",
+                "link": "https://github.com/Peamupbubber/CrewsOutThere/wiki"
             },
-            "projTechUsed": {
-                "projInfoText": "Golang, MySQL, Docker, Bash, Linux, NetBSD"
-            },
-            "projHowToView": {
-                "0": {
-                    "text": "GitHub Repository",
-                    "link": "https://github.com/Peamupbubber/CrewsOutThere"
-                },
-                "1": {
-                    "text": "Project Documentation",
-                    "link": "https://github.com/Peamupbubber/CrewsOutThere/wiki"
-                },
-                "2": {
-                    "text": "Diagrams and additional documents",
-                    "link": "https://drive.google.com/drive/folders/1sSZcov017RWvvNrOn3tgKgXbXBPhQOms?usp=sharing"
-                }
+            "projHowToView2": {
+                "text": "Diagrams and additional documents",
+                "link": "https://drive.google.com/drive/folders/1sSZcov017RWvvNrOn3tgKgXbXBPhQOms?usp=sharing"
             }
         }
     },
+
     "Deadwood": {
-        
+        "projTitle": "Deadwood",
+
+        "projDate": "Sep. 2022 - Dec. 2022",
+
+        "projDesc": "Deadwood is a terminal and GUI game created for my object-oriented design course at WWU.",
+
+        "projMyCont": "I acted as project manager, partitioning work to the other team members and organizing meetings. I did the bulk of the programming and design for this project as well.",
+
+        "projTechUsed": "Java, JFrame, Git, OOP and design patterns/principles",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "Video detailing project",
+                "link": "https://drive.google.com/drive/folders/15LqJucw6KVosVD8JtZtto6mwzTdGnaww?usp=sharing"
+            }
+        }
+    },
+
+    "extra": {
+        "projTitle": "",
+
+        "projDate": "",
+
+        "projDesc": "",
+
+        "projMyCont": "",
+
+        "projTechUsed": "",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView1": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView2": {
+                "text": "",
+                "link": ""
+            }
+        }
     }
 }

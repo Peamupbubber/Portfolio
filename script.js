@@ -24,7 +24,7 @@ function getSpotifyInfo() {
 
 /* Can be used for anything that needs to happen on page load */
 function start() {
-    
+
 }
 
 function displaySD() {
@@ -58,6 +58,24 @@ function fetchProjectData(project) {
         .then((data) => displayProject(data[project]));
 }
 
+/* Takes a specific project section of json data and places it into the display box */
 function displayProject(projectData) {
-    alert(JSON.stringify(projectData));
+    for(var x in projectData) {
+        if(typeof(projectData[x]) == "string") {
+            document.getElementById(x).innerText = projectData[x];
+        }
+        /* Just used for the How to View section */
+        else {
+            for(let i = 0; i <= 2; i++) {
+                if(projectData[x][x + i] != undefined) {
+                    document.getElementById(x + i).parentElement.style.display = "";
+                    document.getElementById(x + i).innerText = projectData[x][x + i]["text"];
+                    document.getElementById(x + i).href = projectData[x][x + i]["link"];
+                }
+                else {
+                    document.getElementById(x + i).parentElement.style.display = "none";
+                }
+            }
+        }
+    }
 }
