@@ -7,6 +7,8 @@ var lastfm  = new LastFM({
     cache  : cache
 });
 
+var initialProjectPage = 'CrewsOutThere';
+
 /* Get my recently/currently listened song */
 function getSpotifyInfo() {
     lastfm.user.getRecentTracks({limit: 1, user: user, api_key: api_key}, {success: function(data){
@@ -24,7 +26,7 @@ function getSpotifyInfo() {
 
 /* Can be used for anything that needs to happen on page load */
 function start() {
-
+    fetchProjectData(initialProjectPage);
 }
 
 function displaySD() {
