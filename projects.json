@@ -8,7 +8,7 @@
         
         "projMyCont": "My primary contribution was to write most of the code found in the crewsOutThere/command folder, primarily these go files: cleanupDB, commandFly, commandParser, commandUtilities, and parserCalls.",
 
-        "projTechUsed": "Golang, MySQL, Docker, Bash, Git, Linux, NetBSD",
+        "projTechUsed": "Golang, MySQL, Docker, APIs, Bash, Git, Linux, NetBSD",
 
         "projHowToView": {
             "projHowToView0": {
@@ -79,6 +79,67 @@
             "projHowToView0": {
                 "text": "",
                 "link": ""
+            }
+        }
+    },
+
+    "MiniShell": {
+        "projTitle": "Mini Shell",
+
+        "projDate": "Jan. 2022 - Mar. 2022",
+
+        "projDesc": "A mini terminal developed for a Computer Systems class at WWU. Uses fork/exec to run new processes given to the terminal.",
+
+        "projMyCont": "Developed argument parsing for the terminal inputs, created the routine for forking and exec-ing, and wrote functionality for the 'ls -l', 'cd', 'pwd', 'cp', 'touch', and 'exit' commands using system calls.",
+
+        "projTechUsed": "C, Linux",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
+            }
+        }
+    },
+
+    "LPS": {
+        "projTitle": "Linear Program Solver",
+
+        "projDate": "June 2023 - Present",
+
+        "projDesc": "A solver for linear programs that I am currently developing after taking a Linear Optimization course at WWU. This involves parsing an input file, validating it is a correct linear program, then solving it using the simplex algorithm.",
+
+        "projMyCont": "Created the entire project and continuing development when I have time. I created a scanner and recursive decent parser to get the information from the input program. I will be writing the solver in the near future.",
+
+        "projTechUsed": "Java, Context-Free Grammars, OOP",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "GitHub Repository",
+                "link": "https://github.com/Peamupbubber/Linear-Programming"
+            }
+        }
+    },
+
+    "Portfolio": {
+        "projTitle": "Personal Portfolio",
+
+        "projDate": "Mar. 2024 - Present",
+
+        "projDesc": "A website I made to showcase the projects I have developed over my years of being at Western, both creating projects for WWU courses and personal projects I've made.",
+
+        "projMyCont": "Created everything you see on this website, learned web design to do so as I had no experience prior. I also research Spotify and Last.fm APIs to get information about my Spotify profile onto the About-Me section.",
+
+        "projTechUsed": "HTML, CSS, JavaScript, JSON, APIs",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "GitHub Repository",
+                "link": "https://github.com/Peamupbubber/peamupbubber.github.io"
+            },
+            "projHowToView1": {
+                "text": "The website you are on",
+                "link": "https://peamupbubber.github.io/"
             }
         }
     },
