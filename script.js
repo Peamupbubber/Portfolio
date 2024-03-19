@@ -60,6 +60,8 @@ function fetchProjectData(project) {
         .then((data) => displayProject(data[project]));
 }
 
+var noLinkProvided = "This project can only be viewed upon request to be added to the repo, as it contains code sensitive to the WWU course it is associated with. Feel free to reach out to me if you are interested in viewing the repo!"
+
 /* Takes a specific project section of json data and places it into the display box */
 function displayProject(projectData) {
     for(var x in projectData) {
@@ -71,8 +73,15 @@ function displayProject(projectData) {
             for(let i = 0; i <= 2; i++) {
                 if(projectData[x][x + i] != undefined) {
                     document.getElementById(x + i).parentElement.style.display = "";
-                    document.getElementById(x + i).innerText = projectData[x][x + i]["text"];
-                    document.getElementById(x + i).href = projectData[x][x + i]["link"];
+                    if(projectData[x][x + i]["link"] == "") {
+                        document.getElementById(x + i).className = "inactiveLink";
+                        document.getElementById(x + i).innerText = noLinkProvided;
+                    }
+                    else {
+                        document.getElementById(x + i).className = "";
+                        document.getElementById(x + i).innerText = projectData[x][x + i]["text"];
+                        document.getElementById(x + i).href = projectData[x][x + i]["link"];
+                    }
                 }
                 else {
                     document.getElementById(x + i).parentElement.style.display = "none";

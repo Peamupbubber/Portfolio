@@ -4,7 +4,7 @@
 
         "projDate": "Jan. 2023 - Dec. 2023",
 
-        "projDesc": "CoT is a fully functioning text-messaging system created for the Bellingham Civil Air Patrol, an auxilary of the US Airforce, intended to get flight crews in contact with each other on short notice.",
+        "projDesc": "CoT is a fully functioning text-messaging system created for the Bellingham Civil Air Patrol, an auxiliary of the US Air force, intended to get flight crews in contact with each other on short notice.",
         
         "projMyCont": "My primary contribution was to write most of the code found in the crewsOutThere/command folder, primarily these go files: cleanupDB, commandFly, commandParser, commandUtilities, and parserCalls.",
 
@@ -41,6 +41,44 @@
             "projHowToView0": {
                 "text": "Video detailing project",
                 "link": "https://drive.google.com/drive/folders/15LqJucw6KVosVD8JtZtto6mwzTdGnaww?usp=sharing"
+            }
+        }
+    },
+
+    "ATLCompiler": {
+        "projTitle": "ATL Compiler",
+
+        "projDate": "Jan. 2023 - Mar. 2023",
+
+        "projDesc": "I created a compiler for 'a teaching language' as a quarter long project for a Compiler Theory and Design course at WWU. This project consisted of creating an input scanner, token parser, symbol tables for variable, function, and program names, abstract syntax trees for program structure, and code generation to create assembly code based on the AST.",
+
+        "projMyCont": "I created wrote the entire files for code generation, ASTs and symbol tables and associate headers (defining structures and various important variables). I also added code to the scanner file, creating the regexes that would be used to identify tokens. Lastly, I added all code associated with the context-free grammar in the parser, but did not write the CFG.",
+
+        "projTechUsed": "C, Assembly, flex, yacc, Linux",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
+            }
+        }
+    },
+
+    "ToyOS": {
+        "projTitle": "ToyOS",
+
+        "projDate": "Sep. 2023 - Dec. 2023",
+
+        "projDesc": "Created the necessary components of a miniature operating system for an OS class at WWU.",
+
+        "projMyCont": "I implemented mutexes, resource management, command line arguments, process and file control, pipes, and the terminal buffers. These were all implemented using C++ classes. Many of these features required complex computations between kernel and user space.",
+
+        "projTechUsed": "C++, C, Linux, Operating Systems, OOP",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
             }
         }
     },
