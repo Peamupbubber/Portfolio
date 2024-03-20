@@ -7,7 +7,8 @@ var lastfm  = new LastFM({
     cache  : cache
 });
 
-var initialProjectPage = 'CrewsOutThere';
+var initialSDProjectPage = 'CrewsOutThere';
+var initialGDProjectPage = 'BTC';
 
 /* Get my recently/currently listened song */
 function getSpotifyInfo() {
@@ -26,7 +27,7 @@ function getSpotifyInfo() {
 
 /* Can be used for anything that needs to happen on page load */
 function start() {
-    fetchProjectData(initialProjectPage);
+    fetchProjectData(initialSDProjectPage);
 }
 
 function displaySD() {
@@ -35,6 +36,8 @@ function displaySD() {
 
     document.getElementById("projectSelectionGD").style.display = "none";
     document.getElementById("projectSelectionSD").style.display = "";
+
+    fetchProjectData(initialSDProjectPage);
 }
 
 function displayGD() {
@@ -43,6 +46,8 @@ function displayGD() {
 
     document.getElementById("projectSelectionSD").style.display = "none";
     document.getElementById("projectSelectionGD").style.display = "";
+
+    fetchProjectData(initialGDProjectPage);
 }
 
 function displayAboutMe() {

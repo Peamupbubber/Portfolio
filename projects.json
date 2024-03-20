@@ -144,6 +144,88 @@
         }
     },
 
+    "BTC": {
+        "projTitle": "",
+
+        "projDate": "",
+
+        "projDesc": "",
+
+        "projMyCont": "",
+
+        "projTechUsed": "",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView1": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView2": {
+                "text": "",
+                "link": ""
+            }
+        }
+    },
+    
+
+    "FMTF": {
+        "projTitle": "",
+
+        "projDate": "",
+
+        "projDesc": "",
+
+        "projMyCont": "",
+
+        "projTechUsed": "",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView1": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView2": {
+                "text": "",
+                "link": ""
+            }
+        }
+    },
+
+    "GridGame": {
+        "projTitle": "",
+
+        "projDate": "",
+
+        "projDesc": "",
+
+        "projMyCont": "",
+
+        "projTechUsed": "",
+
+        "projHowToView": {
+            "projHowToView0": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView1": {
+                "text": "",
+                "link": ""
+            },
+            "projHowToView2": {
+                "text": "",
+                "link": ""
+            }
+        }
+    },
+
     "extra": {
         "projTitle": "",
 
