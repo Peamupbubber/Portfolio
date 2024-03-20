@@ -139,7 +139,7 @@
             },
             "projHowToView1": {
                 "text": "The website you are on",
-                "link": "https://peamupbubber.github.io/"
+                "link": "."
             }
         }
     },
@@ -193,7 +193,7 @@
                 "link": "https://docs.google.com/document/d/17JpR0WN2fjQGXahFKSfOfuwjcl9Plhu_M__bCkrN2Gc/edit"
             },
             "projHowToView2": {
-                "text": "Play the game on Unity Play!",
+                "text": "Play the game on Unity Play",
                 "link": "https://play.unity.com/mg/other/five-minutes-till-five"
             }
         }
@@ -216,7 +216,7 @@
                 "link": "https://github.com/Peamupbubber/Grid-Game"
             },
             "projHowToView1": {
-                "text": "Playable game on Unity Play",
+                "text": "Play the game on Unity Play",
                 "link": "https://play.unity.com/mg/other/grid-game-1"
             }
         }

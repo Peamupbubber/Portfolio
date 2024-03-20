@@ -78,14 +78,23 @@ function displayProject(projectData) {
             for(let i = 0; i <= 2; i++) {
                 if(projectData[x][x + i] != undefined) {
                     document.getElementById(x + i).parentElement.style.display = "";
-                    if(projectData[x][x + i]["link"] == "") {
+                    let link = projectData[x][x + i]["link"];
+                    if(link == "") {
                         document.getElementById(x + i).className = "inactiveLink";
                         document.getElementById(x + i).innerText = noLinkProvided;
                     }
                     else {
                         document.getElementById(x + i).className = "";
                         document.getElementById(x + i).innerText = projectData[x][x + i]["text"];
-                        document.getElementById(x + i).href = projectData[x][x + i]["link"];
+                        document.getElementById(x + i).href = link;
+
+                        /* Tells the page to reload in the same tab if the link is for this website */
+                        if(link == ".") {
+                            document.getElementById(x + i).target = "";
+                        }
+                        else {
+                            document.getElementById(x + i).target = "_blank";
+                        }
                     }
                 }
                 else {
