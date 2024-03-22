@@ -74,6 +74,7 @@ div.pages div {
 
 #spotify {
     width:fit-content;
+    max-width: 100%;
 }
 
 #spotifyInfo {
@@ -85,9 +86,21 @@ div.pages div {
 
 .songInfo {
     margin-left: 0.5em;
+    margin-right: 0.5em;
     font-size: 80%;
-    /* text-wrap: nowrap; */
-    /* overflow-x: hidden; */
+    line-height: 0.75em;
+}
+
+div.songInfoDiv {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.5em;
+}
+
+
+#songImage {
+    border-right: 4px solid black;
 }
 
 #currentlyPlaying {
@@ -95,8 +108,8 @@ div.pages div {
     position: absolute;
     top: 0px;
     right: 0px;
-    border: 2px solid black;
-    
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 #projectHighlight {
