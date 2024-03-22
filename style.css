@@ -73,7 +73,7 @@ div.pages div {
 }
 
 #spotify {
-    width: 13vw;
+    width:fit-content;
 }
 
 #spotifyInfo {
@@ -93,8 +93,10 @@ div.pages div {
 #currentlyPlaying {
     width: 16px;
     position: absolute;
-    top: 1px;
-    right: 1px;
+    top: 0px;
+    right: 0px;
+    border: 2px solid black;
+    
 }
 
 #projectHighlight {
@@ -107,6 +109,7 @@ div.pages div {
 
 #projHeader {
     display: flex;
+    border-bottom: 4px solid green;
 }
 
 #projHeader div {
