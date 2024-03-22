@@ -61,11 +61,45 @@ div.pages div {
     border: 4px solid blue;
     margin-top: 50px;
     padding-left: 5px;
+    display: flex;
+}
+
+#leftAboutMe {
+    width: 50vw;
+}
+
+#rightAboutMe {
+    width: 50vw;
+}
+
+#spotify {
+    width: 13vw;
+}
+
+#spotifyInfo {
+    position: relative;
+    display: flex;
+    border: 4px solid black;
+    height: 64px;
+}
+
+.songInfo {
+    margin-left: 0.5em;
+    font-size: 80%;
+    /* text-wrap: nowrap; */
+    /* overflow-x: hidden; */
+}
+
+#currentlyPlaying {
+    width: 16px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
 }
 
 #projectHighlight {
     border: 4px solid green;
-    width: 75%;
+    width: 75vw;
     min-height: 55vh;
     height: fit-content;
     margin-right: 10vw;
