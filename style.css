@@ -1,9 +1,19 @@
-#myHeader {
-    color:blue;
-    border: 2px solid violet;
-    padding: 20px;
-    margin: 50px;
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: grey; */
+}
+
+h1 {
+    margin: 0;
+    padding-top: 4vh;
+    color:green;
     text-align: center;
+    background-color: #40403e;
+    height: 8vh;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
 }
 
 p {
@@ -16,8 +26,17 @@ ul {
     list-style-type: circle;
 }
 
-.pages-buttons {
+.pagesButton {
     width: 100%;
+    background-color: #40403e;
+    color:green;
+    border: 2px solid black;
+    height: 4vh;
+    font-size: 1em;
+}
+
+.pagesButton:hover {
+    color:darkgreen;
 }
 
 div.pages {
@@ -26,7 +45,7 @@ div.pages {
 }
 
 div.pages div {
-    width: 33%;
+    width: 33.33%;
 }
 
 #projects {
