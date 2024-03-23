@@ -82,12 +82,14 @@ div.pages div {
     display: flex;
     border: 4px solid black;
     height: 64px;
+    background-color: black;
 }
 
 .songInfo {
     margin-left: 0.5em;
     margin-right: 0.5em;
     font-size: 80%;
+    font-family: sans-serif;
     line-height: 0.75em;
 }
 
@@ -98,9 +100,16 @@ div.songInfoDiv {
     margin-top: 0.5em;
 }
 
-
 #songImage {
     border-right: 4px solid black;
+}
+
+#songTitle {
+    color:white;
+}
+
+#songArtist {
+    color:grey;
 }
 
 #currentlyPlaying {
@@ -108,8 +117,6 @@ div.songInfoDiv {
     position: absolute;
     top: 0px;
     right: 0px;
-    border-left: 2px solid black;
-    border-bottom: 2px solid black;
 }
 
 #projectHighlight {
