@@ -1,226 +1,231 @@
 {
-    "CrewsOutThere": {
-        "projTitle": "CrewsOutThere",
-
-        "projDate": "Jan. 2023 - Dec. 2023",
-
-        "projDesc": "CoT is a fully functioning text-messaging system created for the Bellingham Civil Air Patrol, an auxiliary of the US Air force, intended to get flight crews in contact with each other on short notice.",
-        
-        "projMyCont": "My primary contribution was to write most of the code found in the crewsOutThere/command folder, primarily these go files: cleanupDB, commandFly, commandParser, commandUtilities, and parserCalls.",
-
-        "projTechUsed": "Golang, MySQL, Docker, APIs, Bash, Git, Linux, NetBSD",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "GitHub Repository",
-                "link": "https://github.com/Peamupbubber/CrewsOutThere"
-            },
-            "projHowToView1": {
-                "text": "Project Documentation",
-                "link": "https://github.com/Peamupbubber/CrewsOutThere/wiki"
-            },
-            "projHowToView2": {
-                "text": "Diagrams and additional documents",
-                "link": "https://drive.google.com/drive/folders/1sSZcov017RWvvNrOn3tgKgXbXBPhQOms?usp=sharing"
-            }
-        }
-    },
-
-    "Deadwood": {
-        "projTitle": "Deadwood",
-
-        "projDate": "Sep. 2022 - Dec. 2022",
-
-        "projDesc": "Deadwood is a terminal and GUI game created for my object-oriented design course at WWU.",
-
-        "projMyCont": "I acted as project manager, partitioning work to the other team members and organizing meetings. I did the bulk of the programming and design for this project as well.",
-
-        "projTechUsed": "Java, JFrame, Git, OOP and design patterns/principles",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "Video detailing project",
-                "link": "https://drive.google.com/drive/folders/15LqJucw6KVosVD8JtZtto6mwzTdGnaww?usp=sharing"
-            }
-        }
-    },
-
-    "ATLCompiler": {
-        "projTitle": "ATL Compiler",
-
-        "projDate": "Jan. 2023 - Mar. 2023",
-
-        "projDesc": "I created a compiler for 'a teaching language' as a quarter long project for a Compiler Theory and Design course at WWU. This project consisted of creating an input scanner, token parser, symbol tables for variable, function, and program names, abstract syntax trees for program structure, and code generation to create assembly code based on the AST.",
-
-        "projMyCont": "I created wrote the entire files for code generation, ASTs and symbol tables and associate headers (defining structures and various important variables). I also added code to the scanner file, creating the regexes that would be used to identify tokens. Lastly, I added all code associated with the context-free grammar in the parser, but did not write the CFG.",
-
-        "projTechUsed": "C, Assembly, flex, yacc, Linux",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "",
-                "link": ""
-            }
-        }
-    },
-
-    "ToyOS": {
-        "projTitle": "ToyOS",
-
-        "projDate": "Sep. 2023 - Dec. 2023",
-
-        "projDesc": "Created the necessary components of a miniature operating system for an OS class at WWU.",
-
-        "projMyCont": "I implemented mutexes, resource management, command line arguments, process and file control, pipes, and the terminal buffers. These were all implemented using C++ classes. Many of these features required complex computations between kernel and user space.",
-
-        "projTechUsed": "C++, C, Linux, Operating Systems, OOP",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "",
-                "link": ""
-            }
-        }
-    },
-
-    "MiniShell": {
-        "projTitle": "Mini Shell",
-
-        "projDate": "Jan. 2022 - Mar. 2022",
-
-        "projDesc": "A mini terminal developed for a Computer Systems class at WWU. Uses fork/exec to run new processes given to the terminal.",
-
-        "projMyCont": "Developed argument parsing for the terminal inputs, created the routine for forking and exec-ing, and wrote functionality for the 'ls -l', 'cd', 'pwd', 'cp', 'touch', and 'exit' commands using system calls.",
-
-        "projTechUsed": "C, Linux",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "",
-                "link": ""
-            }
-        }
-    },
-
-    "LPS": {
-        "projTitle": "Linear Program Solver",
-
-        "projDate": "June 2023 - Present",
-
-        "projDesc": "A solver for linear programs that I am currently developing after taking a Linear Optimization course at WWU. This involves parsing an input file, validating it is a correct linear program, then solving it using the simplex algorithm.",
-
-        "projMyCont": "Created the entire project and continuing development when I have time. I created a scanner and recursive decent parser to get the information from the input program. I will be writing the solver in the near future.",
-
-        "projTechUsed": "Java, Context-Free Grammars, OOP",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "GitHub Repository",
-                "link": "https://github.com/Peamupbubber/Linear-Programming"
-            }
-        }
-    },
-
-    "Portfolio": {
-        "projTitle": "Personal Portfolio",
-
-        "projDate": "Mar. 2024 - Present",
-
-        "projDesc": "A website I made to showcase the projects I have developed over my years of being at Western, both creating projects for WWU courses and personal projects I've made.",
-
-        "projMyCont": "Created everything you see on this website, learned web design to do so as I had no experience prior. I also research Spotify and Last.fm APIs to get information about my Spotify profile onto the About-Me section.",
-
-        "projTechUsed": "HTML, CSS, JavaScript, JSON, APIs",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "GitHub Repository",
-                "link": "https://github.com/Peamupbubber/peamupbubber.github.io"
-            },
-            "projHowToView1": {
-                "text": "The website you are on",
-                "link": "."
-            }
-        }
-    },
-
-    "BTC": {
-        "projTitle": "By the Campfire",
-
-        "projDate": "Mar. 2023 - Present",
-
-        "projDesc": "By the Campfire is a video game designed with accurate and thorough representation in mind from the start of development. Its purpose is to showcase the ways in which the player character in a video game can accurately represent anyone who plays it, and that the non-player characters in a video game can be generated in a way that diverse groups can be represented without harmfully misrepresenting them. This project includes a document that explains the process by which this game was created and why certain choices were made when implementing the games systems. The document details a survey that was conducted among college students that provided additional insight as to how representation in video games can be done well or poorly, as well as ideas that could be applied to By the Campfire. The document concludes with thoughts on how this can be expanded upon and applied by the industry and other game developers, as well as a download to play the game. The game features a robust character creation menu as well as randomly generated NPCs that can be interacted with in a game space.",
-
-        "projMyCont": "Created the project from idea to implementation. The game is still in production but the core of the project (the implementation of better representation) has been completed and presented.",
-
-        "projTechUsed": "Unity 2D, C#, Aseprite, Google Forms",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "GitHub Repository",
-                "link": "https://github.com/Peamupbubber/ByTheCampfire"
-            },
-            "projHowToView1": {
-                "text": "Publication in the WWU CEDAR database",
-                "link": "https://cedar.wwu.edu/wwu_honors/754/"
-            },
-            "projHowToView2": {
-                "text": "Downloadable build of the game as of the end of the Capstone project",
-                "link": "https://drive.google.com/drive/folders/17Z5AwdUiFuWc8EWzfMfJu5u-Y2Ro07Oa"
-            }
-        }
-    },
+    "SD" : {
+        "CrewsOutThere": {
+            "projTitle": "CrewsOutThere",
     
-
-    "FMTF": {
-        "projTitle": "Five Minutes 'Till Five",
-
-        "projDate": "Sep. 2023 - Dec. 2023",
-
-        "projDesc": "Five Minutes 'Till Five is a stealth based game where you are working your regular office job waiting for the clock to hit 5:00pm. Sneak around the office, bribe your co-workers, interact with the environment, and get as little done as possible while still making it to the top! This game was created for a Game Programming course at WWU in collaboration with 3 other students, the same team I developed CrewsOutThere with.",
-
-        "projMyCont": "Implemented game control logic, fully designed and implemented all UI elements, created all auxiliary scenes (menu, pause, info, death, power-ups). Designed all UI sprites.",
-
-        "projTechUsed": "Unity 3D, C#, Aseprite, GitHub, Google Docs, Game Design Documentation",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "GitHub Repository",
-                "link": "https://github.com/Peamupbubber/FiveMinutesTillFive"
-            },
-            "projHowToView1": {
-                "text": "Game Design Document",
-                "link": "https://docs.google.com/document/d/17JpR0WN2fjQGXahFKSfOfuwjcl9Plhu_M__bCkrN2Gc/edit"
-            },
-            "projHowToView2": {
-                "text": "Play the game on Unity Play",
-                "link": "https://play.unity.com/mg/other/five-minutes-till-five"
+            "projDate": "Jan. 2023 - Dec. 2023",
+    
+            "projDesc": "CoT is a fully functioning text-messaging system created for the Bellingham Civil Air Patrol, an auxiliary of the US Air force, intended to get flight crews in contact with each other on short notice.",
+            
+            "projMyCont": "My primary contribution was to write most of the code found in the crewsOutThere/command folder, primarily these go files: cleanupDB, commandFly, commandParser, commandUtilities, and parserCalls.",
+    
+            "projTechUsed": "Golang, MySQL, Docker, APIs, Bash, Git, Linux, NetBSD",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "GitHub Repository",
+                    "link": "https://github.com/Peamupbubber/CrewsOutThere"
+                },
+                "projHowToView1": {
+                    "text": "Project Documentation",
+                    "link": "https://github.com/Peamupbubber/CrewsOutThere/wiki"
+                },
+                "projHowToView2": {
+                    "text": "Diagrams and additional documents",
+                    "link": "https://drive.google.com/drive/folders/1sSZcov017RWvvNrOn3tgKgXbXBPhQOms?usp=sharing"
+                }
+            }
+        },
+    
+        "Deadwood": {
+            "projTitle": "Deadwood",
+    
+            "projDate": "Sep. 2022 - Dec. 2022",
+    
+            "projDesc": "Deadwood is a terminal and GUI game created for my object-oriented design course at WWU.",
+    
+            "projMyCont": "I acted as project manager, partitioning work to the other team members and organizing meetings. I did the bulk of the programming and design for this project as well.",
+    
+            "projTechUsed": "Java, JFrame, Git, OOP and design patterns/principles",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "Video detailing project",
+                    "link": "https://drive.google.com/drive/folders/15LqJucw6KVosVD8JtZtto6mwzTdGnaww?usp=sharing"
+                }
+            }
+        },
+    
+        "ATL Compiler": {
+            "projTitle": "ATL Compiler",
+    
+            "projDate": "Jan. 2023 - Mar. 2023",
+    
+            "projDesc": "I created a compiler for 'a teaching language' as a quarter long project for a Compiler Theory and Design course at WWU. This project consisted of creating an input scanner, token parser, symbol tables for variable, function, and program names, abstract syntax trees for program structure, and code generation to create assembly code based on the AST.",
+    
+            "projMyCont": "I created wrote the entire files for code generation, ASTs and symbol tables and associate headers (defining structures and various important variables). I also added code to the scanner file, creating the regexes that would be used to identify tokens. Lastly, I added all code associated with the context-free grammar in the parser, but did not write the CFG.",
+    
+            "projTechUsed": "C, Assembly, flex, yacc, Linux",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "",
+                    "link": ""
+                }
+            }
+        },
+    
+        "ToyOS": {
+            "projTitle": "ToyOS",
+    
+            "projDate": "Sep. 2023 - Dec. 2023",
+    
+            "projDesc": "Created the necessary components of a miniature operating system for an OS class at WWU.",
+    
+            "projMyCont": "I implemented mutexes, resource management, command line arguments, process and file control, pipes, and the terminal buffers. These were all implemented using C++ classes. Many of these features required complex computations between kernel and user space.",
+    
+            "projTechUsed": "C++, C, Linux, Operating Systems, OOP",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "",
+                    "link": ""
+                }
+            }
+        },
+    
+        "Mini Shell": {
+            "projTitle": "Mini Shell",
+    
+            "projDate": "Jan. 2022 - Mar. 2022",
+    
+            "projDesc": "A mini terminal developed for a Computer Systems class at WWU. Uses fork/exec to run new processes given to the terminal.",
+    
+            "projMyCont": "Developed argument parsing for the terminal inputs, created the routine for forking and exec-ing, and wrote functionality for the 'ls -l', 'cd', 'pwd', 'cp', 'touch', and 'exit' commands using system calls.",
+    
+            "projTechUsed": "C, Linux",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "",
+                    "link": ""
+                }
+            }
+        },
+    
+        "Linear Program Solver": {
+            "projTitle": "Linear Program Solver",
+    
+            "projDate": "June 2023 - Present",
+    
+            "projDesc": "A solver for linear programs that I am currently developing after taking a Linear Optimization course at WWU. This involves parsing an input file, validating it is a correct linear program, then solving it using the simplex algorithm.",
+    
+            "projMyCont": "Created the entire project and continuing development when I have time. I created a scanner and recursive decent parser to get the information from the input program. I will be writing the solver in the near future.",
+    
+            "projTechUsed": "Java, Context-Free Grammars, OOP",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "GitHub Repository",
+                    "link": "https://github.com/Peamupbubber/Linear-Programming"
+                }
+            }
+        },
+    
+        "Personal Portfolio": {
+            "projTitle": "Personal Portfolio",
+    
+            "projDate": "Mar. 2024 - Present",
+    
+            "projDesc": "A website I made to showcase the projects I have developed over my years of being at Western, both creating projects for WWU courses and personal projects I've made.",
+    
+            "projMyCont": "Created everything you see on this website, learned web design to do so as I had no experience prior. I also research Spotify and Last.fm APIs to get information about my Spotify profile onto the About-Me section.",
+    
+            "projTechUsed": "HTML, CSS, JavaScript, JSON, APIs",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "GitHub Repository",
+                    "link": "https://github.com/Peamupbubber/peamupbubber.github.io"
+                },
+                "projHowToView1": {
+                    "text": "The website you are on",
+                    "link": "."
+                }
             }
         }
     },
 
-    "GridGame": {
-        "projTitle": "Grid Game",
-
-        "projDate": "Mar. 2020 - Jul. 2020",
-
-        "projDesc": "A simple Tetris-style block game where you move items from a pool of options onto a grid, attempting to get complete rows or columns, earning points for amount of blocks placed and rows/columns completed.",
-
-        "projMyCont": "Created game logic and UI, collaborated with an artist for the draggable block pieces.",
-
-        "projTechUsed": "Unity, C#",
-
-        "projHowToView": {
-            "projHowToView0": {
-                "text": "GitHub Repository",
-                "link": "https://github.com/Peamupbubber/Grid-Game"
-            },
-            "projHowToView1": {
-                "text": "Play the game on Unity Play",
-                "link": "https://play.unity.com/mg/other/grid-game-1"
+    "GD" : {
+        "By the Campfire": {
+            "projTitle": "By the Campfire",
+    
+            "projDate": "Mar. 2023 - Present",
+    
+            "projDesc": "By the Campfire is a video game designed with accurate and thorough representation in mind from the start of development. Its purpose is to showcase the ways in which the player character in a video game can accurately represent anyone who plays it, and that the non-player characters in a video game can be generated in a way that diverse groups can be represented without harmfully misrepresenting them. This project includes a document that explains the process by which this game was created and why certain choices were made when implementing the games systems. The document details a survey that was conducted among college students that provided additional insight as to how representation in video games can be done well or poorly, as well as ideas that could be applied to By the Campfire. The document concludes with thoughts on how this can be expanded upon and applied by the industry and other game developers, as well as a download to play the game. The game features a robust character creation menu as well as randomly generated NPCs that can be interacted with in a game space.",
+    
+            "projMyCont": "Created the project from idea to implementation. The game is still in production but the core of the project (the implementation of better representation) has been completed and presented.",
+    
+            "projTechUsed": "Unity 2D, C#, Aseprite, Google Forms",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "GitHub Repository",
+                    "link": "https://github.com/Peamupbubber/ByTheCampfire"
+                },
+                "projHowToView1": {
+                    "text": "Publication in the WWU CEDAR database",
+                    "link": "https://cedar.wwu.edu/wwu_honors/754/"
+                },
+                "projHowToView2": {
+                    "text": "Downloadable build of the game as of the end of the Capstone project",
+                    "link": "https://drive.google.com/drive/folders/17Z5AwdUiFuWc8EWzfMfJu5u-Y2Ro07Oa"
+                }
+            }
+        },
+        
+    
+        "Five Minutes 'Till Five": {
+            "projTitle": "Five Minutes 'Till Five",
+    
+            "projDate": "Sep. 2023 - Dec. 2023",
+    
+            "projDesc": "Five Minutes 'Till Five is a stealth based game where you are working your regular office job waiting for the clock to hit 5:00pm. Sneak around the office, bribe your co-workers, interact with the environment, and get as little done as possible while still making it to the top! This game was created for a Game Programming course at WWU in collaboration with 3 other students, the same team I developed CrewsOutThere with.",
+    
+            "projMyCont": "Implemented game control logic, fully designed and implemented all UI elements, created all auxiliary scenes (menu, pause, info, death, power-ups). Designed all UI sprites.",
+    
+            "projTechUsed": "Unity 3D, C#, Aseprite, GitHub, Google Docs, Game Design Documentation",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "GitHub Repository",
+                    "link": "https://github.com/Peamupbubber/FiveMinutesTillFive"
+                },
+                "projHowToView1": {
+                    "text": "Game Design Document",
+                    "link": "https://docs.google.com/document/d/17JpR0WN2fjQGXahFKSfOfuwjcl9Plhu_M__bCkrN2Gc/edit"
+                },
+                "projHowToView2": {
+                    "text": "Play the game on Unity Play",
+                    "link": "https://play.unity.com/mg/other/five-minutes-till-five"
+                }
+            }
+        },
+    
+        "Grid Game": {
+            "projTitle": "Grid Game",
+    
+            "projDate": "Mar. 2020 - Jul. 2020",
+    
+            "projDesc": "A simple Tetris-style block game where you move items from a pool of options onto a grid, attempting to get complete rows or columns, earning points for amount of blocks placed and rows/columns completed.",
+    
+            "projMyCont": "Created game logic and UI, collaborated with an artist for the draggable block pieces.",
+    
+            "projTechUsed": "Unity, C#",
+    
+            "projHowToView": {
+                "projHowToView0": {
+                    "text": "GitHub Repository",
+                    "link": "https://github.com/Peamupbubber/Grid-Game"
+                },
+                "projHowToView1": {
+                    "text": "Play the game on Unity Play",
+                    "link": "https://play.unity.com/mg/other/grid-game-1"
+                }
             }
         }
     },
+
 
     "extra": {
         "projTitle": "",

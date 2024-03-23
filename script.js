@@ -7,8 +7,11 @@ var lastfm  = new LastFM({
     cache  : cache
 });
 
+var sd = "SD";
+var gd = "GD";
+
 var initialSDProjectPage = 'CrewsOutThere';
-var initialGDProjectPage = 'BTC';
+var initialGDProjectPage = 'By the Campfire';
 
 /* Get my recently/currently listened song */
 function getSpotifyInfo() {
@@ -32,42 +35,71 @@ function getSpotifyInfo() {
 
 /* Can be used for anything that needs to happen on page load */
 function start() {
-    fetchProjectData(initialSDProjectPage);
+    fetchProjects(sd);
+    fetchProjects(gd);
+    displaySD();
 }
 
 function displaySD() {
-    document.getElementById("aboutMeOuter").style.display = "none";
-    document.getElementById("projectOuter").style.display = "";
+    document.getElementById("aboutMe").style.display = "none";
+    document.getElementById("projects").style.display = "";
 
     document.getElementById("projectSelectionGD").style.display = "none";
     document.getElementById("projectSelectionSD").style.display = "";
 
-    fetchProjectData(initialSDProjectPage);
+    fetchProjectData(sd, initialSDProjectPage);
 }
 
 function displayGD() {
-    document.getElementById("aboutMeOuter").style.display = "none";
-    document.getElementById("projectOuter").style.display = "";
+    document.getElementById("aboutMe").style.display = "none";
+    document.getElementById("projects").style.display = "";
 
     document.getElementById("projectSelectionSD").style.display = "none";
     document.getElementById("projectSelectionGD").style.display = "";
 
-    fetchProjectData(initialGDProjectPage);
+    fetchProjectData(gd, initialGDProjectPage);
 }
 
 function displayAboutMe() {
     getSpotifyInfo();
 
-    document.getElementById("projectOuter").style.display = "none";
-    document.getElementById("aboutMeOuter").style.display = "";
+    document.getElementById("projects").style.display = "none";
+    document.getElementById("aboutMe").style.display = "";
 }
 
-function fetchProjectData(project) {
-    fetch("./projects.json")
+function fetchProjects(category) {
+    fetch("projects.json")
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => createProjectSelection(category, data[category]));
+}
+
+function fetchProjectData(category, project) {
+    fetch("projects.json")
         .then((res) => {
           return res.json();  
         })
-        .then((data) => displayProject(data[project]));
+        .then((data) => displayProject(data[category][project]));
+}
+
+function createProjectSelection(category, projects) {
+    for(var x in projects) {
+        createProject(category, x);
+    }
+}
+
+function createProject(category, name) {
+    const button = document.createElement("button");
+    button.className = "projectSelectionButton";
+    button.onclick = function() { fetchProjectData(category, name); };
+    button.innerText = name;
+
+    const div = document.createElement("div");
+    div.appendChild(button);
+
+    let id = "projectSelection" + category
+    document.getElementById(id).appendChild(div);
 }
 
 var noLinkProvided = "This project can only be viewed upon request to be added to the repo, as it contains code sensitive to the WWU course it is associated with. Feel free to reach out to me if you are interested in viewing the repo!"

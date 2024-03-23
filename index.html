@@ -33,51 +33,10 @@
             </div>
         </div>
 
-        <div id="projectOuter">
-            <div id="projectSelectionSD" class="projectSelection">
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('CrewsOutThere')">CrewsOutThere</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('Deadwood')">Deadwood</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('ATLCompiler')">ATL Compiler</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('ToyOS')">ToyOS</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('MiniShell')">Mini Shell</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('LPS')">Linear Program Solver</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('Portfolio')">Personal Portfolio</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton">extra</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton">Proof scrolling works</button>
-                </div>
-            </div>
+        <div id="projects">
+            <div id="projectSelectionSD" class="projectSelection"></div>
 
-            <div id="projectSelectionGD" class="projectSelection" style="display: none;">
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('BTC')">By the Campfire</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('FMTF')">Five Minutes 'Till Five</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('Deadwood')">Deadwood</button>
-                </div>
-                <div>
-                    <button class="projectSelectionButton" onclick="fetchProjectData('GridGame')">Grid Game</button>
-                </div>
-            </div>
+            <div id="projectSelectionGD" class="projectSelection"></div>
     
             <div id="projectHighlight">
                 <div id="projHeader">
@@ -113,36 +72,33 @@
             </div>
         </div>
 
-        <div id="aboutMeOuter" style="display: none;">
-            <div id="aboutMe">
-                <div id="leftAboutMe">
-                    <div id="personalInfo">
-                        <h2>Who am I</h2>
-                    </div>
+        <div id="aboutMe">
+            <div id="leftAboutMe">
+                <div id="personalInfo">
+                    <h2>Who am I</h2>
                 </div>
-                <div id="rightAboutMe">
-                    <div id="contactInfo">
-                        <h2>Contact Info</h2>
-                    </div>
-                    <div id="spotify">
-                        <h2>My Last Spotify Stream</h2>
-                        <div id="spotifyInfo">
-                            <div id="songImageDiv">
-                                <img id="songImage" alt="Cover art of my last listened song on Spotify">
-                            </div>
-                            <div class="songInfoDiv">
-                                <p id="songTitle" class="songInfo"></p>
-                                <p id="songArtist" class="songInfo"></p>
-                            </div>
-                            <div>
-                                <img id="currentlyPlaying" src="currentlyPlaying.gif" alt="Gif of moving bars indicating the song is currently playing">
-                            </div>
+            </div>
+            <div id="rightAboutMe">
+                <div id="contactInfo">
+                    <h2>Contact Info</h2>
+                </div>
+                <div id="spotify">
+                    <h2>My Last Spotify Stream</h2>
+                    <div id="spotifyInfo">
+                        <div id="songImageDiv">
+                            <img id="songImage" alt="Cover art of my last listened song on Spotify">
+                        </div>
+                        <div class="songInfoDiv">
+                            <p id="songTitle" class="songInfo"></p>
+                            <p id="songArtist" class="songInfo"></p>
+                        </div>
+                        <div>
+                            <img id="currentlyPlaying" src="currentlyPlaying.gif" alt="Gif of moving bars indicating the song is currently playing">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
     </body>
 
