@@ -107,6 +107,10 @@ div.pages div {
     width: 50vw;
 }
 
+.linkImage {
+    width: 32px;
+}
+
 #spotify {
     width:fit-content;
     max-width: 100%;
